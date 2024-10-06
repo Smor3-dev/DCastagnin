@@ -1,0 +1,14 @@
+div.media {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    text-decoration: none;
+}
+
+div.media button {
+    margin-left: 9px;
+}
+
+div.media button a {
+    text-decoration: none;
+}
