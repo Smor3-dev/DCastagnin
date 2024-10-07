@@ -13,8 +13,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .w3-bar-block .w3-bar-item {padding:20px}
 </style>
 </head>
-<body>
 
+<bgsound src="../music/Edith Piaf - Non, Je ne regrette rien.mp3" autoplay loop="infinite"></bgsound>
+
+
+<body onclick="PlayAudio()">
 <!-- Sidebar (hidden by default) -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()"
@@ -111,6 +114,16 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+<script>
+  function PlayAudio() {
+    document.getElementById("trak1").play();
+  }
+</script>
+
+<audio id="trak1"  autoplay controls loop>
+  <source src="../music/track.mp3" type="audio/mp3">
+  Este navegador no acepta formatos de audio
+</audio>
 
 </body>
 </html>
